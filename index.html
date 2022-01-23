@@ -8,9 +8,9 @@
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.5/aframe/build/aframe-ar.js"></script>
 
 <body style='margin : 0px; overflow: scroll;'>
-  <a-scene embedded arjs>
+  <a-scene embedded arjs=’sourceType: webcam;’>
     <a-marker preset="hiro">
-      <a-entity position="0 0 0" scale="1 1 1" gltf-model="/earth.gltf">
+      <a-entity obj-model="obj: url(/earth.obj)" ; gltf-model="/earth.gltf" ;>
       </a-entity>
     </a-marker>
     <a-entity camera> </a-entity>
